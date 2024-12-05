@@ -34,3 +34,61 @@ body {
 #aside {
     flex-basis: 300px;
 }
+
+/*Uitwerking opdracht*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 20px);
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 20px;
+}
+
+#aside {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#main {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 576px) {
+
+    .container {
+        flex-basis: 1200px;
+        flex-wrap: nowrap;
+    }
+
+    #aside {
+        flex-basis: 300px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    #main {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+}
