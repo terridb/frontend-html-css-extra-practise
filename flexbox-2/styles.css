@@ -1,0 +1,47 @@
+/*hsl(201, 89%, 93%) (item), hsl(40, 88%, 97%) (achtergrond) en hsl(196, 64%, 37%) (tekstkleur)*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: hsl(40, 88%, 97%);
+    color: hsl(196, 64%, 37%);
+}
+
+#wrapper {
+    width: 1200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    background-color: hsl(201, 89%, 93%);
+    border-radius: 10px;
+    flex-basis: 215px;
+    height: 350px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 16px;
+    margin: 16px;
+}
+
+h1,
+h2 {
+    margin: 20px;
+}
